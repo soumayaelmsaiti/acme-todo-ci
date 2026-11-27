@@ -1,0 +1,19 @@
+name: info
+
+on: push
+
+jobs:
+  info:
+    runs-on: ubuntu-latest
+    steps:
+      - name: hostname
+        run: hostname
+
+      - name: gebruiker
+        run: whoami
+
+      - name: OS
+        run: uname -a
+
+      - name: inhoud van de werkmap
+        run: ls -la
